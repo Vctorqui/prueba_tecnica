@@ -1,17 +1,37 @@
-:root{
+:root {
   font-size: 16px;
 }
 
-body{
+body {
   opacity: 0;
 }
 
-p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
+p.h1,
+h1,
+p.h2,
+h2,
+p.h3,
+h3,
+p.h4,
+h4,
+p.h5,
+h5,
+p.h6,
+h6 {
   font-family: Roboto;
   color: $text;
 }
 
-a,p,div,input,button,textarea{
+hr {
+  margin-top: 0;
+}
+
+a,
+p,
+div,
+input,
+button,
+textarea {
   font-family: Roboto;
   color: $text-secondary;
 }
@@ -25,16 +45,43 @@ section {
   padding: 8vh 0;
 }
 
+.profile-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid $black;
+}
+
+.table-head {
+  background: #eae6f5;
+}
+
 .btn.btn-primary {
+  font-weight: bold;
   background-color: $primary;
   border-color: $primary;
-  border-radius: 0;
-  padding: 10px 100px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
   color: $white;
 }
 
-.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
-  background-color: $btn-hover!important;
-  border-color: $btn-hover!important;
-  box-shadow: none!important;
+.btn.btn-primary:hover,
+.btn.btn-outline-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:focus {
+  background-color: $btn-hover !important;
+  border-color: $btn-hover !important;
+  box-shadow: none !important;
+  color: $white;
+}
+
+.btn.btn-outline-primary {
+  font-weight: bold;
+  width: 150px;
+  border-color: $primary;
+  border-radius: 10px;
+  padding: 10px;
+  color: $primary;
 }

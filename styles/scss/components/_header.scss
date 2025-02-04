@@ -1,12 +1,46 @@
+.header {
+  background: rgb(166, 232, 204);
+  background: -moz-linear-gradient(
+    90deg,
+    rgb(208, 247, 230) 2%,
+    rgba(220, 246, 235, 1) 30%,
+    rgba(231, 233, 245, 1) 60%,
+    rgba(219, 189, 205, 1) 98%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(208, 247, 230) 2%,
+    rgba(220, 246, 235, 1) 30%,
+    rgba(231, 233, 245, 1) 60%,
+    rgba(219, 189, 205, 1) 98%
+  );
+  background: linear-gradient(
+    90deg,
+    rgb(208, 247, 230) 2%,
+    rgba(220, 246, 235, 1) 30%,
+    rgba(231, 233, 245, 1) 60%,
+    rgba(219, 189, 205, 1) 98%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a6e8cc",endColorstr="#dbbdcd",GradientType=1);
+}
 
+.nav-link,
+.nav-link:hover {
+  color: $text-secondary;
+}
 /*----------------------------Queries-------------------------------*/
 
-@media (max-width: 1399.98px) {}
+@media (max-width: 1399.98px) {
+}
 
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+}
 
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+}
 
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+}
 
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+}
