@@ -48,7 +48,9 @@
           aria-labelledby="nav-profile-tab"
           tabindex="0"
         >
-          <div class="d-flex justify-content-between align-items-center mt-4">
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4"
+          >
             <div>
               <p class="h4 mb-1">
                 Proyección de tu campaña con los influencer elegidos
@@ -68,9 +70,9 @@
 
           <!-- Stats Grid -->
           <div class="row">
-            <div class="col-9">
+            <div class="col-12 col-lg-9">
               <div class="row g-4 mb-4">
-                <div class="col-md-3">
+                <div class="col-12 col-md-6 col-lg-3">
                   <div class="card h-100 bg-success bg-opacity-10 border-0">
                     <div class="card-body">
                       <div
@@ -90,7 +92,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-12 col-md-6 col-lg-3">
                   <div class="card h-100 bg-primary bg-opacity-10 border-0">
                     <div class="card-body">
                       <div
@@ -110,7 +112,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-12 col-md-6 col-lg-3">
                   <div class="card h-100 bg-info bg-opacity-10 border-0">
                     <div class="card-body">
                       <div
@@ -130,7 +132,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-12 col-md-6 col-lg-3">
                   <div class="card h-100 bg-warning bg-opacity-10 border-0">
                     <div class="card-body">
                       <div
@@ -208,26 +210,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
               <div class="card">
                 <div class="card-body">
-                  <!-- <h2 class="h5 mb-4">Resumen</h2>
-
-                    <div class="mb-4">
-                      <div class="d-flex justify-content-between mb-3">
-                        <span class="text-secondary">Redes:</span>
-                        <span class="fw-medium" id="totalRedes">3</span>
-                      </div>
-                      <div class="d-flex justify-content-between mb-3">
-                        <span class="text-secondary">Servicios:</span>
-                        <span class="fw-medium" id="totalServicios">18</span>
-                      </div>
-                      <div class="d-flex justify-content-between mb-3">
-                        <span class="text-secondary">Influencer:</span>
-                        <span class="fw-medium" id="totalInfluencer">6</span>
-                      </div>
-                    </div> -->
-
                   <!-- Summary Sidebar -->
 
                   <h3 class="h5 mb-4">Resumen</h3>
@@ -262,40 +247,28 @@
                     </p>
                   </div>
 
-                  <div class="mb-3">
+                  <div class="d-flex flex-column mb-3">
                     <label class="form-label small fw-medium"
                       >Tu presupuesto:</label
                     >
-                    <input
-                      type="text"
-                      class="form-control"
-                      value="500 CRTS"
-                      readonly
-                    />
+                    <span class="badge text-bg-secondary"> 500 CRTS </span>
                   </div>
 
-                  <div class="mb-3">
+                  <div class="d-flex flex-column mb-3">
                     <label class="form-label small fw-medium">Objetivo:</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      value="Aumentar ventas y tráfico web"
-                      readonly
-                    />
+                    <span class="badge text-bg-secondary">
+                      Aumentar ventas y tráfico web
+                    </span>
                   </div>
 
                   <div>
                     <label class="form-label small fw-medium">Intereses:</label>
                     <div class="d-flex flex-wrap gap-2">
-                      <span class="badge bg-primary bg-opacity-10 text-primary"
-                        >Salud</span
-                      >
-                      <span class="badge bg-primary bg-opacity-10 text-primary"
+                      <span class="badge text-bg-secondary">Salud</span>
+                      <span class="badge text-bg-secondary"
                         >Ejercicio y fitness</span
                       >
-                      <span class="badge bg-primary bg-opacity-10 text-primary"
-                        >Ergonomía</span
-                      >
+                      <span class="badge text-bg-secondary">Ergonomía</span>
                     </div>
                   </div>
                 </div>

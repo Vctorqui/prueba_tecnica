@@ -14,6 +14,7 @@ if (screen.width > 768) {
 $("header").load("components/header.html");
 $("footer").load("components/footer.html");
 
+
 // Influencer data
 const influencers = [
   {

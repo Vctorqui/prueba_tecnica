@@ -61,7 +61,7 @@ section {
   font-weight: bold;
   background-color: $primary;
   border-color: $primary;
-  width: 100%;
+  // width: 100%;
   border-radius: 10px;
   padding: 10px;
   color: $white;
@@ -69,6 +69,8 @@ section {
 
 .btn.btn-primary:hover,
 .btn.btn-outline-primary:hover,
+.btn.btn-outline-primary:active,
+.btn.btn-outline-primary:focus,
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
   background-color: $btn-hover !important;
@@ -84,4 +86,18 @@ section {
   border-radius: 10px;
   padding: 10px;
   color: $primary;
+}
+
+/* Animación para pantallas móviles */
+@media (max-width: 1000px) {
+}
+
+/* Responsive styles */
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
 }
