@@ -108,7 +108,7 @@ section {
     position: relative;
     background-color: white;
     margin: 15% auto;
-    padding: 30px;
+    padding: 10px 30px 40px;
     width: 70%;
     max-width: 400px;
     border-radius: 8px;
@@ -128,9 +128,8 @@ section {
 }
 
 .close {
-  position: absolute;
-  right: 20px;
-  top: 10px;
+  display: flex;
+  justify-content: flex-end;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
@@ -140,6 +139,9 @@ section {
   }
 }
 
+.bi-bookmark {
+  color: #aae7cf;
+}
 /* Toggle component */
 .toggle-container {
   max-width: 80px;
