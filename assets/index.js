@@ -141,7 +141,6 @@ function influencerTable(influencers) {
   });
 }
 // Initial population of the table
-
 function sortInfluencersByServices(order) {
   const sortedInfluencers = [...influencers].sort((a, b) => {
     return order === "asc" ? a.services - b.services : b.services - a.services;

@@ -12,6 +12,10 @@
   .table td:nth-child(3) {
     display: none;
   }
+
+  .btn-actions-container {
+    align-items: unset !important;
+  }
 }
 
 @media (max-width: 575.98px) {
