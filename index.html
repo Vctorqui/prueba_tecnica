@@ -50,7 +50,7 @@
           tabindex="0"
         >
           <div
-            class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4"
+            class="d-flex flex-column flex-md-row justify-content-between align-items-center my-4"
           >
             <div>
               <p class="h4 mb-1 fw-bold">
@@ -192,7 +192,9 @@
                   class="d-flex flex-column gap-2 justify-content-center mb-3"
                 >
                   <h2 class="h4 mb-0 fw-bold">Influencer elegidos</h2>
-                  <div class="d-flex justify-content-between gap-3">
+                  <div
+                    class="d-flex justify-content-between gap-3 btn-group-influencers"
+                  >
                     <div class="d-flex gap-2 btn-group-influencers">
                       <button
                         class="btn btn-secondary d-flex align-items-center gap-2"
@@ -248,13 +250,16 @@
                             </button>
                           </th>
                           <th>
-                            Valor total
-                            <button id="sortValueAsc" class="btn btn-sm p-0">
-                              <i class="bi bi-sort-up"></i>
-                            </button>
-                            <button id="sortValueDesc" class="btn btn-sm p-0">
-                              <i class="bi bi-sort-down"></i>
-                            </button>
+                            Valor
+                            <div class="d-none d-lg-inline">
+                              total
+                              <button id="sortValueAsc" class="btn btn-sm p-0">
+                                <i class="bi bi-sort-up"></i>
+                              </button>
+                              <button id="sortValueDesc" class="btn btn-sm p-0">
+                                <i class="bi bi-sort-down"></i>
+                              </button>
+                            </div>
                           </th>
                           <th>Cambiar</th>
                           <th>Eliminar</th>

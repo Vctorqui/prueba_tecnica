@@ -113,8 +113,6 @@ section {
   z-index: 1000;
 }
 
-
-
 .content-modal {
   position: relative;
   background-color: white;
@@ -158,6 +156,10 @@ section {
 //   margin: 20px 0;
 //   text-align: center;
 // }
+
+.toggle-container {
+  max-width: 80px;
+}
 
 .toggle {
   display: flex;
