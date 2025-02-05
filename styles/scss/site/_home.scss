@@ -57,13 +57,22 @@ section {
   background: #eae6f5;
 }
 
+.text-price {
+  color: $primary;
+  font-weight: bold;
+}
+
 .btn.btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
   font-weight: bold;
   background-color: $primary;
   border-color: $primary;
   // width: 100%;
   border-radius: 10px;
-  padding: 10px;
+  // padding: 10px;
   color: $white;
 }
 
@@ -80,15 +89,118 @@ section {
 }
 
 .btn.btn-outline-primary {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
   font-weight: bold;
-  width: 150px;
+  // width: 150px;
   border-color: $primary;
   border-radius: 10px;
-  padding: 10px;
+  // padding: 10px;
   color: $primary;
 }
 
-/* Animación para pantallas móviles */
+/* Estilos base del modal (mantenemos los anteriores) */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.content-modal {
+  position: relative;
+  background-color: white;
+  margin: 15% auto;
+  padding: 30px;
+  width: 70%;
+  max-width: 400px;
+  border-radius: 8px;
+  animation: openModal 0.3s ease-out;
+}
+
+@keyframes openModal {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+.close:hover {
+  color: #000;
+}
+
+/* Estilo del mensaje de guardado */
+// .mensaje-guardar {
+//   font-size: 1.2em;
+//   color: #333;
+//   margin: 20px 0;
+//   text-align: center;
+// }
+
+.toggle {
+  display: flex;
+  background: #d7d7d7;
+  border-radius: 10px;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+#view-toggle {
+  display: none;
+}
+
+.toggle-button {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Slider background */
+.toggle::after {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: white;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#view-toggle:checked + .toggle::after {
+  transform: translateX(100%);
+}
+
+.menu-icon i,
+.grid-icon i {
+  color: #333;
+}
+
 @media (max-width: 1000px) {
 }
 
