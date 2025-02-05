@@ -1,4 +1,4 @@
-# Proyecto con Sass
+# Prueba Tecnica Frontend
 
 Este proyecto utiliza Sass para el desarrollo de estilos.
 
