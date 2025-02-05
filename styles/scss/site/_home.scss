@@ -57,9 +57,20 @@ section {
   background: #eae6f5;
 }
 
+.value-text {
+  background: #eae6f5;
+  border-radius:5px;
+  padding: 8px;
+}
 .text-price {
   color: $primary;
   font-weight: bold;
+}
+
+.btn.btn-secondary {
+  background: #d7d7d7;
+  border: none;
+  color: $text;
 }
 
 .btn.btn-primary {
@@ -98,6 +109,10 @@ section {
   border-color: $primary;
   border-radius: 10px;
   // padding: 10px;
+  color: $primary;
+}
+
+.badge-text {
   color: $primary;
 }
 
