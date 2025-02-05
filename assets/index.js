@@ -14,7 +14,6 @@ if (screen.width > 768) {
 $("header").load("components/header.html");
 $("footer").load("components/footer.html");
 
-
 // Influencer data
 const influencers = [
   {
@@ -93,7 +92,7 @@ function populateInfluencerTable() {
               ${influencer.networks
                 .map(
                   (network) => `
-                  <div class="social-icon ${network}"></div>
+                  <div class="bi bi-${network}"></div>
               `
                 )
                 .join("")}

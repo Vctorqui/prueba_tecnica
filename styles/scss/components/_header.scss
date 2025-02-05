@@ -24,9 +24,14 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a6e8cc",endColorstr="#dbbdcd",GradientType=1);
 }
 
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 .nav-link,
 .nav-link:hover {
-  color: $text-secondary;
+  color: $text;
 }
 /*----------------------------Queries-------------------------------*/
 
