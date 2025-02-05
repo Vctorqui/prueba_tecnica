@@ -1,15 +1,7 @@
 $(window).on("load", function () {
   $("body").css("opacity", "1");
-  populateInfluencerTable(influencers);
+  influencerTable(influencers);
 });
-
-let offset;
-
-if (screen.width > 768) {
-  offset = 200;
-} else {
-  offset = 0;
-}
 
 $("header").load("components/header.html");
 $("footer").load("components/footer.html");
@@ -66,8 +58,8 @@ const influencers = [
   },
 ];
 
-// Populate influencer table
-function populateInfluencerTable(influencers) {
+// Influencer table
+function influencerTable(influencers) {
   const tableBody = document.getElementById("influencerTableBody");
   tableBody.innerHTML = "";
 
@@ -154,17 +146,16 @@ function sortInfluencersByServices(order) {
   const sortedInfluencers = [...influencers].sort((a, b) => {
     return order === "asc" ? a.services - b.services : b.services - a.services;
   });
-  populateInfluencerTable(sortedInfluencers);
+  influencerTable(sortedInfluencers);
 }
 
 function sortInfluencersByValue(order) {
   const sortedInfluencers = [...influencers].sort((a, b) => {
     return order === "asc" ? a.value - b.value : b.value - a.value;
   });
-  populateInfluencerTable(sortedInfluencers);
+  influencerTable(sortedInfluencers);
 }
 
-// Add event listeners to the sorting buttons
 document.getElementById("sortServicesAsc").addEventListener("click", () => {
   sortInfluencersByServices("asc");
 });

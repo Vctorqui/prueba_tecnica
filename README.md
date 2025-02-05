@@ -43,7 +43,7 @@ La tabla de influencers se encuentra en el archivo `index.html` y se llena diná
 
 ### Población de la Tabla
 
-La función `populateInfluencerTable` en `index.js` se encarga de llenar la tabla con los datos de los influencers. Esta función crea filas y celdas dinámicamente y las agrega al cuerpo de la tabla.
+La función `influencerTable` en `index.js` se encarga de llenar la tabla con los datos de los influencers. Esta función crea filas y celdas dinámicamente y las agrega al cuerpo de la tabla.
 
 ### Ordenamiento de la Tabla
 

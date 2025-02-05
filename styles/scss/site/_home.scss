@@ -53,20 +53,6 @@ section {
   border: 1px solid $black;
 }
 
-.table-head {
-  background: #eae6f5;
-}
-
-.value-text {
-  background: #eae6f5;
-  border-radius:5px;
-  padding: 8px;
-}
-.text-price {
-  color: $primary;
-  font-weight: bold;
-}
-
 .btn.btn-secondary {
   background: #d7d7d7;
   border: none;
@@ -81,9 +67,7 @@ section {
   font-weight: bold;
   background-color: $primary;
   border-color: $primary;
-  // width: 100%;
   border-radius: 10px;
-  // padding: 10px;
   color: $white;
 }
 
@@ -105,18 +89,12 @@ section {
   gap: 5px;
   align-items: center;
   font-weight: bold;
-  // width: 150px;
   border-color: $primary;
   border-radius: 10px;
-  // padding: 10px;
   color: $primary;
 }
 
-.badge-text {
-  color: $primary;
-}
-
-/* Estilos base del modal (mantenemos los anteriores) */
+/* Modal component */
 .modal {
   display: none;
   position: fixed;
@@ -126,17 +104,16 @@ section {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
-}
-
-.content-modal {
-  position: relative;
-  background-color: white;
-  margin: 15% auto;
-  padding: 30px;
-  width: 70%;
-  max-width: 400px;
-  border-radius: 8px;
-  animation: openModal 0.3s ease-out;
+  .content-modal {
+    position: relative;
+    background-color: white;
+    margin: 15% auto;
+    padding: 30px;
+    width: 70%;
+    max-width: 400px;
+    border-radius: 8px;
+    animation: openModal 0.3s ease-out;
+  }
 }
 
 @keyframes openModal {
@@ -158,20 +135,12 @@ section {
   font-weight: bold;
   cursor: pointer;
   color: #333;
+  &:hover {
+    color: #000;
+  }
 }
 
-.close:hover {
-  color: #000;
-}
-
-/* Estilo del mensaje de guardado */
-// .mensaje-guardar {
-//   font-size: 1.2em;
-//   color: #333;
-//   margin: 20px 0;
-//   text-align: center;
-// }
-
+/* Toggle component */
 .toggle-container {
   max-width: 80px;
 }
