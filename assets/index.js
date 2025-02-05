@@ -1,6 +1,6 @@
 $(window).on("load", function () {
   $("body").css("opacity", "1");
-  populateInfluencerTable();
+  populateInfluencerTable(influencers);
 });
 
 let offset;
@@ -67,7 +67,7 @@ const influencers = [
 ];
 
 // Populate influencer table
-function populateInfluencerTable() {
+function populateInfluencerTable(influencers) {
   const tableBody = document.getElementById("influencerTableBody");
   tableBody.innerHTML = "";
 
@@ -79,7 +79,7 @@ function populateInfluencerTable() {
     profileCell.className = "align-middle";
     profileCell.innerHTML = `
           <div class="d-flex align-items-center gap-2">
-              <img src="${influencer.image}" class="profile-image" alt="Profile">
+              <img src="${influencer.image}" class="d-none d-lg-block profile-image" alt="Profile">
               <span>${influencer.username}</span>
           </div>
       `;
@@ -148,3 +148,35 @@ function populateInfluencerTable() {
     tableBody.appendChild(row);
   });
 }
+// Initial population of the table
+
+function sortInfluencersByServices(order) {
+  const sortedInfluencers = [...influencers].sort((a, b) => {
+    return order === "asc" ? a.services - b.services : b.services - a.services;
+  });
+  populateInfluencerTable(sortedInfluencers);
+}
+
+function sortInfluencersByValue(order) {
+  const sortedInfluencers = [...influencers].sort((a, b) => {
+    return order === "asc" ? a.value - b.value : b.value - a.value;
+  });
+  populateInfluencerTable(sortedInfluencers);
+}
+
+// Add event listeners to the sorting buttons
+document.getElementById("sortServicesAsc").addEventListener("click", () => {
+  sortInfluencersByServices("asc");
+});
+
+document.getElementById("sortServicesDesc").addEventListener("click", () => {
+  sortInfluencersByServices("desc");
+});
+
+document.getElementById("sortValueAsc").addEventListener("click", () => {
+  sortInfluencersByValue("asc");
+});
+
+document.getElementById("sortValueDesc").addEventListener("click", () => {
+  sortInfluencersByValue("desc");
+});

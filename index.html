@@ -193,7 +193,7 @@
                 >
                   <h2 class="h4 mb-0 fw-bold">Influencer elegidos</h2>
                   <div class="d-flex justify-content-between gap-3">
-                    <div class="d-flex align-items-center gap-2">
+                    <div class="d-flex gap-2 btn-group-influencers">
                       <button
                         class="btn btn-secondary d-flex align-items-center gap-2"
                       >
@@ -229,14 +229,33 @@
                 </div>
 
                 <div class="card">
-                  <div class="table-responsive">
+                  <div class="table-responsive-sm">
                     <table class="table table-hover mb-0">
                       <thead class="table-head">
                         <tr>
                           <th>Influencer</th>
                           <th>Redes</th>
-                          <th>N° servicios</th>
-                          <th>Valor total</th>
+                          <th>
+                            N° servicios
+                            <button id="sortServicesAsc" class="btn btn-sm p-0">
+                              <i class="bi bi-sort-up"></i>
+                            </button>
+                            <button
+                              id="sortServicesDesc"
+                              class="btn btn-sm p-0"
+                            >
+                              <i class="bi bi-sort-down"></i>
+                            </button>
+                          </th>
+                          <th>
+                            Valor total
+                            <button id="sortValueAsc" class="btn btn-sm p-0">
+                              <i class="bi bi-sort-up"></i>
+                            </button>
+                            <button id="sortValueDesc" class="btn btn-sm p-0">
+                              <i class="bi bi-sort-down"></i>
+                            </button>
+                          </th>
                           <th>Cambiar</th>
                           <th>Eliminar</th>
                           <th>Acción</th>
@@ -287,7 +306,7 @@
                     <div
                       class="d-flex justify-content-between align-items-center mb-2"
                     >
-                      <span class="fw-medium">Valor total:</span>
+                      <span class="fw-bold">Valor total:</span>
                       <span class="h4 mb-0 text-price">450 CRTS</span>
                     </div>
                     <p class="small text-secondary mb-4">
@@ -296,16 +315,16 @@
                     </p>
                   </div>
 
-                  <div class="d-flex flex-column mb-3">
+                  <div class="d-flex align-items-start flex-column mb-3">
                     <label class="form-label small fw-medium"
                       >Tu presupuesto:</label
                     >
-                    <span class="badge text-bg-secondary"> 500 CRTS </span>
+                    <span class="badge text-bg-secondary p-2"> 500 CRTS </span>
                   </div>
 
-                  <div class="d-flex flex-column mb-3">
+                  <div class="d-flex align-items-start flex-column mb-3">
                     <label class="form-label small fw-medium">Objetivo:</label>
-                    <span class="badge text-bg-secondary">
+                    <span class="badge text-bg-secondary p-2">
                       Aumentar ventas y tráfico web
                     </span>
                   </div>
@@ -313,11 +332,11 @@
                   <div>
                     <label class="form-label small fw-medium">Intereses:</label>
                     <div class="d-flex flex-wrap gap-2">
-                      <span class="badge text-bg-secondary">Salud</span>
-                      <span class="badge text-bg-secondary"
+                      <span class="badge text-bg-secondary p-2">Salud</span>
+                      <span class="badge text-bg-secondary p-2"
                         >Ejercicio y fitness</span
                       >
-                      <span class="badge text-bg-secondary">Ergonomía</span>
+                      <span class="badge text-bg-secondary p-2">Ergonomía</span>
                     </div>
                   </div>
                 </div>
