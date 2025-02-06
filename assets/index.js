@@ -4,7 +4,6 @@ $(window).on("load", function () {
 });
 
 $("header").load("components/header.html");
-$("footer").load("components/footer.html");
 
 // Influencer data
 const influencers = [

@@ -1,12 +1,15 @@
+// table
 .table-head {
-  background: #eae6f5;
+  background: $lightRose;
 }
 
+// Summary Sidebar
 .value-text {
-  background: #eae6f5;
+  background: $lightRose;
   border-radius: 5px;
   padding: 8px;
 }
+
 .text-price {
   color: $primary;
   font-weight: bold;
@@ -16,6 +19,7 @@
   color: $primary;
 }
 
+// Influencers Campaign Section
 .btn-actions-container {
   display: flex;
   align-items: center;

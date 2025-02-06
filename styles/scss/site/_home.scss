@@ -142,6 +142,7 @@ section {
 .bi-bookmark {
   color: #aae7cf;
 }
+
 /* Toggle component */
 .toggle-container {
   max-width: 80px;
@@ -189,9 +190,6 @@ section {
 .menu-icon i,
 .grid-icon i {
   color: $darkergrey;
-}
-
-@media (max-width: 1000px) {
 }
 
 /* Responsive styles */
