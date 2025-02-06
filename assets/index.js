@@ -3,6 +3,7 @@ $(window).on("load", function () {
   influencerTable(influencers);
 });
 
+// Header loads the created component
 $("header").load("components/header.html");
 
 // Influencer data
@@ -147,6 +148,7 @@ function sortInfluencersByServices(order) {
   influencerTable(sortedInfluencers);
 }
 
+// table sort function
 function sortInfluencersByValue(order) {
   const sortedInfluencers = [...influencers].sort((a, b) => {
     return order === "asc" ? a.value - b.value : b.value - a.value;

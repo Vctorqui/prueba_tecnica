@@ -15,12 +15,12 @@ function closeModal() {
 // Event Listeners
 btnOpen.onclick = openModal;
 
-// All elements use the same close function
+// All elements use the same closing function
 [btnClose, btnBack, btnCampaigns].forEach((element) => {
   element.onclick = closeModal;
 });
 
-// Close model clicking outsite it
+// Close model by clicking outsite it
 window.onclick = function (event) {
   if (event.target == modal) {
     closeModal();
